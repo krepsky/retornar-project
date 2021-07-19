@@ -1,4 +1,4 @@
-.bg-blu {
+.bg-blue {
     background-color: #2c3aa5;
 }
 .bg-white {
@@ -7,6 +7,29 @@
 .text-blue {
     color: #2c3aa5;
 }
-.text-color-white {
+.text-white {
+    color: #ffffff;
+}
+.btn-pattern {
+    border: none;
+    border-radius: 50px;
+    min-height: 50px;
+    background-color: transparent;
+    width: 100%;
+}
+.btn-blue {
+    background-color: #2c3aa5;
+    color: #ffffff;
+    border: 1px solid #2c3aa5;
+}
+.btn-blue:hover {
+    background-color: #1f4c8e;
+}
+.btn-white{
+    background-color: #ffffff;
     color: #2c3aa5;
+    border: 1px solid #2c3aa5;
+}
+.btn-white:hover {
+    background-color: #efefef;
 }

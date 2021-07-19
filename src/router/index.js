@@ -5,17 +5,27 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/Home',
+    path: '/',
     name: 'Home',
     component: () => import('../views/moduleHome/Home.vue'),
   },
   {
-    path: '/',
+    path: '/entrar',
     name: 'Login',
     component: () => import('../views/moduleLogin/Login.vue'),
   },
   {
-    path: '/products',
+    path: '/cadastrar',
+    name: 'register',
+    component: () => import('../views/moduleLogin/Login.vue'),
+  },
+  {
+    path: '/carrinho',
+    name: 'order',
+    component: () => import('../views/moduleOrder/Order.vue'),
+  },
+  {
+    path: '/produtos',
     name: 'Products',
     component: () => import('../views/moduleProducts/Products.vue'),
   },

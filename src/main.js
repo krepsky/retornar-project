@@ -7,16 +7,18 @@ import VueAxios from 'vue-axios';
 import VueToast from 'vue-toast-notification';
 import 'vue-toast-notification/dist/theme-sugar.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faUserSecret } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { faArrowLeft, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { faFontAwesome } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+
+library.add(faArrowLeft, faShoppingCart, faFontAwesome);
 
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
+import "./assets/css/patterns.css";
 
-library.add(faUserSecret, faFontAwesome);
 
 Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);

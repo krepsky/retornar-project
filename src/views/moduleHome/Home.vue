@@ -1,5 +1,31 @@
 <template>
-  <b-container>
+  <div>
+    <b-row>
+      <b-col cols="12" class="p-0">
+        <img
+          class="banner-home"
+          src="../../assets/imgs/acai.jpg"
+          alt="Banner inicial"
+        />
+      </b-col>
+    </b-row>
+    <b-row>
+      <b-col cols="12 mt-3">
+        <h1 class="text-center">Retornar Açai</h1>
+      </b-col>
+    </b-row>
+    <b-row align-h="center">
+      <b-col cols="10 mt-3">
+        <button type="button" class="btn-pattern btn-blue" @click="redirect('/entrar')">Entrar</button>
+      </b-col>
+    </b-row>
+    <b-row align-h="center">
+      <b-col cols="10 mt-2">
+        <button type="button" class="btn-pattern btn-white" @click="redirect('/cadastrar')">Cadastrar</button>
+      </b-col>
+    </b-row>
+  </div>
+  <!-- <b-container>
     <b-row class="mt-3">
       <b-col>
         <h2>Teste</h2>
@@ -52,7 +78,7 @@
         />
       </b-col>
     </b-row>
-  </b-container>
+  </b-container> -->
 </template>
 
 <script>
@@ -136,14 +162,17 @@ export default {
         this.loading.formResetCEP = false;
       }, 2000);
     },
+    redirect(route) {
+      this.$router.push(route);
+    },
   },
   name: "Home",
 };
 </script>
 
 <style scoped>
-body {
+.banner-home {
   width: 100%;
-  height: 100%;
+  min-height: 55vh;
 }
 </style>
